@@ -43,10 +43,10 @@ RM = "/Users/william/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/william/Desktop/BoilerBot/2019 /CV Team/ClassifierAccuracy/armor-detection-cascade"
+CMAKE_SOURCE_DIR = "/Users/william/Desktop/BoilerBot/2019/CV Team/ClassifierAccuracy/armor-detection-cascade"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/william/Desktop/BoilerBot/2019 /CV Team/ClassifierAccuracy/armor-detection-cascade"
+CMAKE_BINARY_DIR = "/Users/william/Desktop/BoilerBot/2019/CV Team/ClassifierAccuracy/armor-detection-cascade"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/armor-detection.dir/depend.make
@@ -59,29 +59,29 @@ include CMakeFiles/armor-detection.dir/flags.make
 
 CMakeFiles/armor-detection.dir/armor-detection.cpp.o: CMakeFiles/armor-detection.dir/flags.make
 CMakeFiles/armor-detection.dir/armor-detection.cpp.o: armor-detection.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/william/Desktop/BoilerBot/2019 /CV Team/ClassifierAccuracy/armor-detection-cascade/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/armor-detection.dir/armor-detection.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/armor-detection.dir/armor-detection.cpp.o -c "/Users/william/Desktop/BoilerBot/2019 /CV Team/ClassifierAccuracy/armor-detection-cascade/armor-detection.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/william/Desktop/BoilerBot/2019/CV Team/ClassifierAccuracy/armor-detection-cascade/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/armor-detection.dir/armor-detection.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/armor-detection.dir/armor-detection.cpp.o -c "/Users/william/Desktop/BoilerBot/2019/CV Team/ClassifierAccuracy/armor-detection-cascade/armor-detection.cpp"
 
 CMakeFiles/armor-detection.dir/armor-detection.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/armor-detection.dir/armor-detection.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/william/Desktop/BoilerBot/2019 /CV Team/ClassifierAccuracy/armor-detection-cascade/armor-detection.cpp" > CMakeFiles/armor-detection.dir/armor-detection.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/william/Desktop/BoilerBot/2019/CV Team/ClassifierAccuracy/armor-detection-cascade/armor-detection.cpp" > CMakeFiles/armor-detection.dir/armor-detection.cpp.i
 
 CMakeFiles/armor-detection.dir/armor-detection.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/armor-detection.dir/armor-detection.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/william/Desktop/BoilerBot/2019 /CV Team/ClassifierAccuracy/armor-detection-cascade/armor-detection.cpp" -o CMakeFiles/armor-detection.dir/armor-detection.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/william/Desktop/BoilerBot/2019/CV Team/ClassifierAccuracy/armor-detection-cascade/armor-detection.cpp" -o CMakeFiles/armor-detection.dir/armor-detection.cpp.s
 
 CMakeFiles/armor-detection.dir/Settings.cpp.o: CMakeFiles/armor-detection.dir/flags.make
 CMakeFiles/armor-detection.dir/Settings.cpp.o: Settings.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/william/Desktop/BoilerBot/2019 /CV Team/ClassifierAccuracy/armor-detection-cascade/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/armor-detection.dir/Settings.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/armor-detection.dir/Settings.cpp.o -c "/Users/william/Desktop/BoilerBot/2019 /CV Team/ClassifierAccuracy/armor-detection-cascade/Settings.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/william/Desktop/BoilerBot/2019/CV Team/ClassifierAccuracy/armor-detection-cascade/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/armor-detection.dir/Settings.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/armor-detection.dir/Settings.cpp.o -c "/Users/william/Desktop/BoilerBot/2019/CV Team/ClassifierAccuracy/armor-detection-cascade/Settings.cpp"
 
 CMakeFiles/armor-detection.dir/Settings.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/armor-detection.dir/Settings.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/william/Desktop/BoilerBot/2019 /CV Team/ClassifierAccuracy/armor-detection-cascade/Settings.cpp" > CMakeFiles/armor-detection.dir/Settings.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/william/Desktop/BoilerBot/2019/CV Team/ClassifierAccuracy/armor-detection-cascade/Settings.cpp" > CMakeFiles/armor-detection.dir/Settings.cpp.i
 
 CMakeFiles/armor-detection.dir/Settings.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/armor-detection.dir/Settings.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/william/Desktop/BoilerBot/2019 /CV Team/ClassifierAccuracy/armor-detection-cascade/Settings.cpp" -o CMakeFiles/armor-detection.dir/Settings.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/william/Desktop/BoilerBot/2019/CV Team/ClassifierAccuracy/armor-detection-cascade/Settings.cpp" -o CMakeFiles/armor-detection.dir/Settings.cpp.s
 
 # Object files for target armor-detection
 armor__detection_OBJECTS = \
@@ -138,7 +138,7 @@ armor-detection: /usr/local/lib/libopencv_objdetect.3.4.2.dylib
 armor-detection: /usr/local/lib/libopencv_imgproc.3.4.2.dylib
 armor-detection: /usr/local/lib/libopencv_core.3.4.2.dylib
 armor-detection: CMakeFiles/armor-detection.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/william/Desktop/BoilerBot/2019 /CV Team/ClassifierAccuracy/armor-detection-cascade/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable armor-detection"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/william/Desktop/BoilerBot/2019/CV Team/ClassifierAccuracy/armor-detection-cascade/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable armor-detection"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/armor-detection.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -151,6 +151,6 @@ CMakeFiles/armor-detection.dir/clean:
 .PHONY : CMakeFiles/armor-detection.dir/clean
 
 CMakeFiles/armor-detection.dir/depend:
-	cd "/Users/william/Desktop/BoilerBot/2019 /CV Team/ClassifierAccuracy/armor-detection-cascade" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/william/Desktop/BoilerBot/2019 /CV Team/ClassifierAccuracy/armor-detection-cascade" "/Users/william/Desktop/BoilerBot/2019 /CV Team/ClassifierAccuracy/armor-detection-cascade" "/Users/william/Desktop/BoilerBot/2019 /CV Team/ClassifierAccuracy/armor-detection-cascade" "/Users/william/Desktop/BoilerBot/2019 /CV Team/ClassifierAccuracy/armor-detection-cascade" "/Users/william/Desktop/BoilerBot/2019 /CV Team/ClassifierAccuracy/armor-detection-cascade/CMakeFiles/armor-detection.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/Users/william/Desktop/BoilerBot/2019/CV Team/ClassifierAccuracy/armor-detection-cascade" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/william/Desktop/BoilerBot/2019/CV Team/ClassifierAccuracy/armor-detection-cascade" "/Users/william/Desktop/BoilerBot/2019/CV Team/ClassifierAccuracy/armor-detection-cascade" "/Users/william/Desktop/BoilerBot/2019/CV Team/ClassifierAccuracy/armor-detection-cascade" "/Users/william/Desktop/BoilerBot/2019/CV Team/ClassifierAccuracy/armor-detection-cascade" "/Users/william/Desktop/BoilerBot/2019/CV Team/ClassifierAccuracy/armor-detection-cascade/CMakeFiles/armor-detection.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/armor-detection.dir/depend
 

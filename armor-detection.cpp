@@ -3,9 +3,7 @@
 #include <algorithm>
 #include <opencv2/opencv.hpp>
 
-// Code Insert
-#include <sqlite3.h>
-// END
+#include <fstream>
 
 #include "Settings.h"
 #include "SearchArea.h"
@@ -149,14 +147,25 @@ void getSearchArea(vector<Armor> &armors, vector<Rect> &searchAreas, int width, 
     }
 }
 
-void outputResult(Armor *resultArmor) {
-    // Classifier Statistics Code
+void outputResult(Armor *resultArmor, ofstream *logStreamPtr, string &videofileName, int frameNum) {
+    // Log output
+    // TODO Store output into log file for evaluation
+    // Output filename and frame for reference
 
-    // TODO Get labelled data from SQL Database
+    /* Log file reference
+     * Video filename example: robot_blue_3m_480p.mp4
+     * videofileName = robot_blue_3m_480p
+     * label data reference example: robot_red_3m_480p_frame95.jpg
+     * Sample Line in logfile:
+     *      robot_red_3m_480p_frame95.jpg 123.23 123.23
+     * The first number is x coordinate of the center of the detected armor
+     * The second is the y coordinate of the center of the detected armor
+     * both in pixels
+     */
+    *logStreamPtr << videofileName << "_frame" << frameNum << ".jpg";
+    *logStreamPtr << " " << resultArmor->x << " " << resultArmor->y << endl;
 
-    // TODO Calculate error
-
-    // End Code
+    // End log output
 //    i2c.send(*resultArmor);
     printf("x: %f, y: %f, z: %fm, vx: %frad/s, vy: %frad/s, vz: %fm/s\n", resultArmor->x, resultArmor->y, resultArmor->z, resultArmor->angular_velocity_x, resultArmor->angular_velocity_y, resultArmor->velocity_z);
 }
@@ -174,10 +183,25 @@ int main(int argc, char **argv) {
     settings.read(fs);
     VideoCapture cap;
 
+    // Logging Code
+    ofstream logfile;
+    string videofileName;
+
     if (settings.cameraID != -1) {
         cap.open(settings.cameraID);
+
+        // Log Code insertion
+        videofileName = "Camera.log";
+        logfile.open(videofileName, ios::out);  // set log file handler, which will overwrite previous logfile
+        // End log code
     } else {
         cap.open(settings.fileName);
+
+        // Log Code insertion
+        size_t extPos = settings.fileName.find_last_of(".");  // Find the array index of "."
+        videofileName = settings.fileName.substr(0, extPos);
+        logfile.open(videofileName + ".log", ios::out);  // set log file handler, will overwrite previous logfile
+        // End log Code
     }
 
     /// Camera setup
@@ -287,22 +311,22 @@ int main(int argc, char **argv) {
         auto numArmors = (unsigned int) armors.size();
         Armor *resultArmor = &armors[0];
 	if (numArmors > 0) {
-            if (numArmors > 1) {
-                float minScore = (float) (abs(armors[0].x - midX) + abs(armors[0].y - midY) + armors[0].z +
-                                      pow(armors[0].internal_velocity_x, 2) + pow(armors[0].internal_velocity_y, 2) +
-                                      pow(armors[0].velocity_z, 2));
-                for (unsigned int i = 1; i < numArmors; i++) {
-                    //TODO - score formula
-                    float score = (float) (abs(armors[i].x - midX) + abs(armors[i].y - midY) + armors[i].z +
-                                       pow(armors[i].internal_velocity_x, 2) + pow(armors[i].internal_velocity_y, 2) +
-                                       pow(armors[i].velocity_z, 2)); // the smaller the better
-                    if (score < minScore) {
-                        minScore = score;
-                        resultArmor = &armors[i];
-                    }
+        if (numArmors > 1) {
+            float minScore = (float) (abs(armors[0].x - midX) + abs(armors[0].y - midY) + armors[0].z +
+                                  pow(armors[0].internal_velocity_x, 2) + pow(armors[0].internal_velocity_y, 2) +
+                                  pow(armors[0].velocity_z, 2));
+            for (unsigned int i = 1; i < numArmors; i++) {
+                //TODO - score formula
+                float score = (float) (abs(armors[i].x - midX) + abs(armors[i].y - midY) + armors[i].z +
+                                   pow(armors[i].internal_velocity_x, 2) + pow(armors[i].internal_velocity_y, 2) +
+                                   pow(armors[i].velocity_z, 2)); // the smaller the better
+                if (score < minScore) {
+                    minScore = score;
+                    resultArmor = &armors[i];
                 }
             }
-	    outputResult(resultArmor);
+        }
+	    outputResult(resultArmor, &logfile, videofileName, frameCount);
 	    foundCount++;
 	}
 

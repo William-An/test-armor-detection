@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/william/Desktop/BoilerBot/2019 /CV Team/ClassifierAccuracy/armor-detection-cascade/Armor.h
+/Users/william/Desktop/BoilerBot/2019/CV Team/ClassifierAccuracy/armor-detection-cascade/Armor.h
 opencv2/opencv.hpp
 -
 
-/Users/william/Desktop/BoilerBot/2019 /CV Team/ClassifierAccuracy/armor-detection-cascade/I2C.h
+/Users/william/Desktop/BoilerBot/2019/CV Team/ClassifierAccuracy/armor-detection-cascade/I2C.h
 unistd.h
 -
 linux/i2c-dev.h
@@ -24,21 +24,21 @@ cstdio
 cstdlib
 -
 
-/Users/william/Desktop/BoilerBot/2019 /CV Team/ClassifierAccuracy/armor-detection-cascade/SearchArea.h
+/Users/william/Desktop/BoilerBot/2019/CV Team/ClassifierAccuracy/armor-detection-cascade/SearchArea.h
 opencv2/opencv.hpp
 -
 
-/Users/william/Desktop/BoilerBot/2019 /CV Team/ClassifierAccuracy/armor-detection-cascade/Settings.cpp
+/Users/william/Desktop/BoilerBot/2019/CV Team/ClassifierAccuracy/armor-detection-cascade/Settings.cpp
 Settings.h
-/Users/william/Desktop/BoilerBot/2019 /CV Team/ClassifierAccuracy/armor-detection-cascade/Settings.h
+/Users/william/Desktop/BoilerBot/2019/CV Team/ClassifierAccuracy/armor-detection-cascade/Settings.h
 
-/Users/william/Desktop/BoilerBot/2019 /CV Team/ClassifierAccuracy/armor-detection-cascade/Settings.h
+/Users/william/Desktop/BoilerBot/2019/CV Team/ClassifierAccuracy/armor-detection-cascade/Settings.h
 string
 -
 opencv2/opencv.hpp
 -
 
-/Users/william/Desktop/BoilerBot/2019 /CV Team/ClassifierAccuracy/armor-detection-cascade/armor-detection.cpp
+/Users/william/Desktop/BoilerBot/2019/CV Team/ClassifierAccuracy/armor-detection-cascade/armor-detection.cpp
 iostream
 -
 vector
@@ -50,13 +50,13 @@ opencv2/opencv.hpp
 sqlite3.h
 -
 Settings.h
-/Users/william/Desktop/BoilerBot/2019 /CV Team/ClassifierAccuracy/armor-detection-cascade/Settings.h
+/Users/william/Desktop/BoilerBot/2019/CV Team/ClassifierAccuracy/armor-detection-cascade/Settings.h
 SearchArea.h
-/Users/william/Desktop/BoilerBot/2019 /CV Team/ClassifierAccuracy/armor-detection-cascade/SearchArea.h
+/Users/william/Desktop/BoilerBot/2019/CV Team/ClassifierAccuracy/armor-detection-cascade/SearchArea.h
 Armor.h
-/Users/william/Desktop/BoilerBot/2019 /CV Team/ClassifierAccuracy/armor-detection-cascade/Armor.h
+/Users/william/Desktop/BoilerBot/2019/CV Team/ClassifierAccuracy/armor-detection-cascade/Armor.h
 I2C.h
-/Users/william/Desktop/BoilerBot/2019 /CV Team/ClassifierAccuracy/armor-detection-cascade/I2C.h
+/Users/william/Desktop/BoilerBot/2019/CV Team/ClassifierAccuracy/armor-detection-cascade/I2C.h
 
 /usr/local/include/opencv/cxcore.h
 opencv2/core/core_c.h

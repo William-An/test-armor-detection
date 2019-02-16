@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/william/Desktop/BoilerBot/2019 /CV Team/ClassifierAccuracy/armor-detection-cascade/Settings.cpp" "/Users/william/Desktop/BoilerBot/2019 /CV Team/ClassifierAccuracy/armor-detection-cascade/CMakeFiles/armor-detection.dir/Settings.cpp.o"
-  "/Users/william/Desktop/BoilerBot/2019 /CV Team/ClassifierAccuracy/armor-detection-cascade/armor-detection.cpp" "/Users/william/Desktop/BoilerBot/2019 /CV Team/ClassifierAccuracy/armor-detection-cascade/CMakeFiles/armor-detection.dir/armor-detection.cpp.o"
+  "/Users/william/Desktop/BoilerBot/2019/CV Team/ClassifierAccuracy/armor-detection-cascade/Settings.cpp" "/Users/william/Desktop/BoilerBot/2019/CV Team/ClassifierAccuracy/armor-detection-cascade/CMakeFiles/armor-detection.dir/Settings.cpp.o"
+  "/Users/william/Desktop/BoilerBot/2019/CV Team/ClassifierAccuracy/armor-detection-cascade/armor-detection.cpp" "/Users/william/Desktop/BoilerBot/2019/CV Team/ClassifierAccuracy/armor-detection-cascade/CMakeFiles/armor-detection.dir/armor-detection.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

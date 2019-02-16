@@ -1,7 +1,10 @@
 <?xml version="1.0"?>
 <opencv_storage>
+    <!--Changed input file-->
     <input>"/home/why/computer-vision/robot_blue_3m_480p.mp4"</input>
-    <cascade>"/home/why/computer-vision/Williams/armor-detection-cascade/cascade.xml"</cascade>
+    <!--Changed cascade xml directory-->
+    <!--<cascade>"/home/why/computer-vision/Williams/armor-detection-cascade/cascade.xml"</cascade>-->
+    <cascade>"./cascade.xml"</cascade>
     <width>640</width>
     <height>480</height>
     <fps>30</fps>
